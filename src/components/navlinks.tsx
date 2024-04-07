@@ -34,7 +34,6 @@ interface NavLinksProps {
 
 export default function NavLinks({ user }: NavLinksProps) {
   const pathname = usePathname();
-
   const { setTheme, theme } = useTheme();
 
   return (

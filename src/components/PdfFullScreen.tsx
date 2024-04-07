@@ -14,7 +14,6 @@ interface PdfFullscreenProps {
 const PdfFullScreen = ({ fileUrl }: PdfFullscreenProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const [numPages, setNumPages] = useState<number>();
-
   const { width, ref } = useResizeDetector();
 
   return (
@@ -31,7 +30,7 @@ const PdfFullScreen = ({ fileUrl }: PdfFullscreenProps) => {
           variant="ghost"
           size="sm"
           className="gap-1.5"
-          aria-label="fullscreen"
+          aria-label="fullscreen ring"
         >
           <Expand className="size-4" />
         </Button>

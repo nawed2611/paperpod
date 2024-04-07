@@ -88,9 +88,6 @@ export default function PodcastPage({ user, isSubscribed }: any) {
   const [podcastUrl, setPodcastUrl] = useState<string>("");
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
 
-  console.log("user", user);
-  console.log("isSubscribed", isSubscribed);
-
   const handleClick = (paperurl: string) => {
     setPaperURL(paperurl);
 
